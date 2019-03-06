@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+
+  let p = new Promise((resolve,reject)=>{
+      resolve('promise')
+  })
+
+
+  /*用async定义的函数返回值是一个Promise对象*/
+  async function getUser() {
+      //await后面跟的是promise实例，如果不是会自动转换成promise
+      //直接让 promise实例执行返回执行后的参数
+      //await是一个语法糖，直接拿到resolve或者reject的参数
+      let a=await p
+      //这里会等待await后面的异步执行完毕，才会执行下一步，因此打印出a不是undefineds,异步变成了同步
+      console.log(a);
+  }
+
+  getUser()
+
+
+</script>
+</body>
+</html>

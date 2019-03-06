@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*用async定义的函数返回值是一个Promise对象*/
+    async function getUser() {
+      //throw new Error('error')
+      return "44444"
+    }
+    getUser().then((res)=>{
+        console.log(res)
+    }).catch((err)=>{
+        console.log(err)
+    })
+
+
+  </script>
+</body>
+</html>
