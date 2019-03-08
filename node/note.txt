@@ -6,3 +6,7 @@ http模块
 ** send file
 ** static
 2.koa
+
+# 与数据库的关系
+express mySQL
+koa mongodb
