@@ -7,6 +7,7 @@ import {name,age} from  './module2.js'
 import * as obj from './module2.js'
 //或者使用  export default {} 导出，也可以使用import一次性导入
 
+
 console.log(name);
 console.log(obj);
 
