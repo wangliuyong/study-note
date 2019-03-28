@@ -11,6 +11,12 @@ $them:#ccc;
   border: $amount solid red;
 }
 
+/*3.placeholder混入一个类*/
+
+%content{
+  box-shadow: red 1px  1px 1px 1px      ;
+}
+
 body{
   h1{
     color: green;

@@ -29,3 +29,9 @@
       }
     }
 
+
+
+- css命名法--BEM
+
+普通：user-card__name
+激活状态时：user-card--active/user-card--hover
