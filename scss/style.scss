@@ -12,9 +12,8 @@ $them:#ccc;
 }
 
 /*3.placeholder混入一个类*/
-
 %content{
-  box-shadow: red 1px  1px 1px 1px      ;
+  box-shadow: 0  0 3px red ;
 }
 
 body{
@@ -22,5 +21,12 @@ body{
     color: green;
     background: $them;
     @include border-1px(0.5px);
+    @extend %content;
+    &:hover{
+      color: #000;
+    }
+    &-p{
+      color: #cccccc;
+    }
   }
 }

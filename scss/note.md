@@ -20,12 +20,20 @@
     @mixin border-2px($amount:2px) {
       border: $amount solid red;
     }
+    /*使用function*/
+    @function px($size){
+        @return  ($size/3600）+px;
+    
+    }
     
     body{
       h1{
         color: green;
         background: $them;
         @include border-1px(0.5px);
+        &:hover{
+            color:red;
+        }
       }
     }
 
