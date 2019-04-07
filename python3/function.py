@@ -42,3 +42,14 @@ def fun1():
     print(name)
     return 0
 fun1()
+# lambda表达式，其实就是匿名函数
+d = lambda x, y : x+y
+d(2,3)
+
+# filter 过滤器
+temp = range(10)
+list(filter(lambda x : x % 2,temp))
+
+# map 迭代器
+temp = range(10)
+list(map(lambda x : x ** 2,temp))
