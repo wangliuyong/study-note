@@ -1,6 +1,7 @@
-console.log("hello world");
-function f() {
-    return "wangliuyong"
-};
+function greeter(person) {
+    return "Hello, " + person;
+}
 
-f();
+let user = "Jane User";
+
+document.body.innerHTML = greeter(user);

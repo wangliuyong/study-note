@@ -1,0 +1,40 @@
+一 python 是一门解释型，面向对象，动态数据类型的高级程序语言
+二 内置函数（BIF）
+dir(__builtins__) ## 输出所有内建函数
+input()  #获取用户输入
+int()
+str()
+float()
+bool()
+help()  #返回参数的用法
+
+三 语句
+1.判断
+if true:
+   state
+elif true:
+    state
+else:
+    state
+2.循环
+
+while true:
+    state
+    break
+    continue
+
+四 操作符
+a == 3 and b ==4
+五 判读数据类型
+type()
+isintance('name',str)  == true
+name = r"D:\nname"
+
+五 模块
+random模块
+引入模块
+import random
+intnum = random.randint(1, 10)
+
+六 assert 断言
+ assert state  ##state 为false 的时候程序会崩溃 抛出AssertionError错误
