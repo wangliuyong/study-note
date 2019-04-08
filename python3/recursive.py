@@ -1,24 +1,24 @@
 # 递归
 
 #迭代函数
-def getProduct(n):
-    product = 1
-    for i in range(1,n+1):
-        product *= i 
+# def getProduct(n):
+#     product = 1
+#     for i in range(1,n+1):
+#         product *= i 
     
-    print("%d的阶乘是%d:" % (n,product))
-    return product
+#     print("%d的阶乘是%d:" % (n,product))
+#     return product
 
-getProduct(10)
+# getProduct(10)
 
-# 递归函数
-def getProduct1(n):
-    if n == 1:
-        return 1
-    else:
-        return getProduct1(n-1) *n
+# # 递归函数
+# def getProduct1(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         return getProduct1(n-1) *n
 
-getProduct1(3)
+# getProduct1(3)
 
 #斐波那契数列
 
@@ -32,3 +32,13 @@ while True:
         count += 1
     else:
         break
+
+# 递归实现
+
+def fibo(n):
+    if n==1 or n==2:
+        return 1
+    else:
+        return fibo(n-1) + fibo(n-2)    
+
+# fibo(n=20)
