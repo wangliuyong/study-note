@@ -15,8 +15,3 @@ pick_file = open('pickle_test.plk','rb')
 my_list1 = pickle.load(pick_file)
 pick_file.close()
 print(my_list1)
-
-
-
-
-
