@@ -1,3 +1,5 @@
+#模块循环输入
+
 import random
 script = random.randint(1,10)
 
@@ -13,6 +15,7 @@ while guess != script:
         print("small")
     temp=input("继续输入:\n")
     guess=int(temp)
+#断言
 assert( False if guess == script else True)
 print("猜到了,正确答案是："+ str(script))
 print("game over" )

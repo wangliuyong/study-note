@@ -1,3 +1,5 @@
+#元组
+
 # tuple比list多了更多的限制
 # 元素里面的元素不能更改
 tuple1=("wang","list")

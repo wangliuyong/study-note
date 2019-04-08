@@ -1,3 +1,5 @@
+#字符
+
 str1 = "wang"
 str2 = "WANG"
 

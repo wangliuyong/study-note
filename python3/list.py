@@ -1,3 +1,6 @@
+#列表
+
+
 list1 = ["wang","liu","yong"]
 list2 = ["chen", 5,[4,5,6]]
 

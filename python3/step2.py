@@ -1,3 +1,5 @@
+#判断语句
+
 k=dir(__builtins__)    #输出所有的内建函数
 print(k)
 name=input("请输入您的名字：\n")
@@ -20,5 +22,5 @@ if x < y:
     small=x
 else:
     small = y
-
+#三元操作符
 small = x if x < y else y
