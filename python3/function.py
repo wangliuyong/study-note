@@ -6,6 +6,7 @@ if __name__ == "__main__":
         print('first function')
         return a + b
 
+    print(myClass2.__doc__)
     #收集参数
     def test(*params):
         print('*params:', *params)
