@@ -2,7 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b035a947-9890-4d86-b5ee-913b8b4f15eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/music3.0/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/api/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/api/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/api/recomend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/common/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/common/image/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/common/js/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/common/js/jsonp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/common/stylus/base.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/common/stylus/icon.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/common/stylus/index.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/common/stylus/mixin.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/common/stylus/reset.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/common/stylus/variable.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/components/Head.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/components/Navbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/components/Slide.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/views/Rank.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/views/Recomend.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/views/Search.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music3.0/src/views/Singer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue3-music/src/components/Slide.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue3-music/src/views/Rank.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue3-music/src/views/Recomend.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue3-music/src/views/Search.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue3-music/src/views/Singer.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-music/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/vue3-music/.browserslistrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-music/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue3-music/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-music/src/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue3-music/src/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-music/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue3-music/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-music/src/views/Recomend.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue3-music/src/views/Recomend.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue3-music/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vue3-music/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,11 +54,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/typeScript/ts_demo.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/music3.0/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/music3.0/src/components/Slide.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/music3.0/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -39,7 +96,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/vue3-music" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -70,6 +127,7 @@
         <option value="$PROJECT_DIR$/scss/style.scss" />
         <option value="$PROJECT_DIR$/scss/note.md" />
         <option value="$PROJECT_DIR$/typeScript/ts_demo.js" />
+        <option value="$PROJECT_DIR$/music3.0/src/main.js" />
       </list>
     </option>
   </component>
@@ -103,13 +161,24 @@
             <path>
               <item name="study" type="b2602c69:ProjectViewProjectNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="typeScript" type="462c0819:PsiDirectoryNode" />
+              <item name="music3.0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="study" type="b2602c69:ProjectViewProjectNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="typeScript" type="462c0819:PsiDirectoryNode" />
-              <item name="ts_demo.ts" type="620a8d5e:NestingTreeNode" />
+              <item name="music3.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="vue3-music" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="vue3-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -122,7 +191,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/typeScript" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/music3.0" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
@@ -138,6 +207,9 @@
       <recent name="E:\code\study\node" />
       <recent name="E:\code\study\express" />
       <recent name="E:\code\practice\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\code\study\music3.0\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -186,6 +258,8 @@
       <workItem from="1554203795714" duration="35000" />
       <workItem from="1554290231752" duration="621000" />
       <workItem from="1554362185570" duration="175000" />
+      <workItem from="1555822538271" duration="1523000" />
+      <workItem from="1555824391494" duration="808000" />
     </task>
     <task id="LOCAL-00001" summary="node的简单用法">
       <created>1552051698385</created>
@@ -240,7 +314,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33614000" />
+    <option name="totallyTimeSpent" value="35945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -258,7 +332,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32852563" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3672131" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2672131" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32852563" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -517,8 +591,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/typeScript/ts_demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue3-music/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music3.0/src/store/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music3.0/src/api/.gitkeep">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music3.0/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music3.0/src/components/Slide.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/music3.0/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
         </state>
       </provider>
     </entry>
