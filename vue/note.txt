@@ -1,0 +1,228 @@
+vue笔记
+# 基本语法
+v-bind:属性=""
+v-if=""是否渲染
+v-for="item in list"
+渲染一个列表 ，可以使用push添加列表   app.list.push({})  v-for="(item,index) in list"
+也可以渲染一个对象
+***
+v-for="value,key）in object"  :key='item.id'
+**注意vue不能检测到对象属性的添加和删除，可使用
+
+Vue.set(vm.userProfile, 'age', 27)
+或者
+vm.$set(vm.userProfile, 'age', 27)
+Object.assign()
+
+vm.userProfile = Object.assign({}, vm.userProfile, {
+  age: 27,
+  favoriteColor: 'Vue Green'
+})
+
+***注意要绑定key
+
+push()
+pop()
+shift()
+splice()
+sort()
+reverse()
+这些都会触发使徒的更新，直接更改数组中的某一项不会触发更新
+v-on:event=""  绑定一个事件
+v-model=""  数据的双向绑定
+
+**this指向app实例
+
+
+
+<todo-item v-for="item in list" v-bind:to="item"></todo-item>
+子组件与父组件通过props传递数据，数据是单向传播的
+组件必须加载到跟组件app中才会被渲染出来
+
+### 二.属性与方法
+
+var app =new Vue()
+vue暴露的一些属性以$开头
+app.$data====data
+app.$el==="#app"
+app.$watch('onClick',function(newValue,oldValue)=>{
+
+})
+
+**注意不要使用箭头函数
+点击事件触发监听函数
+
+#### 生命周期（部分）
+created(){},
+mounted(){},
+updated(){},
+destroyed(){}
+
+this指向app实例
+
+{{}}里面的内容会被渲染成纯文本，如果想渲染成html请使用<div v-html="html"></div>
+{{}}里面可以使用表达式，但不建议使用，建议使用计算属性
+
+使用v-bind：property="" 来绑定各种属性
+
+v-bind:id="app"
+v-bind:disable="bool"
+
+### 三.计算属性computed
+
+1.需要对数据经行处理是建议使用计算属性
+2.如果计算属性依赖的数据没有改变则计算属性不会被更新，methods里面的方法，只要重新渲染便会重新计算
+
+默认只可以获取数据，不可更改，也可以更改
+compted:{
+  xxx:{
+    get:function(){},
+    set:function(){}
+  }
+}
+
+
+#### 监听wtch
+watch：{
+  message:function(){}
+}
+
+message发生改变时触发函数
+
+
+### 四.class与style的绑定
+
+v-bind:class="{active:isActive}"
+v-binbd:class="{isActive ? active : error}"
+
+v-bind绑定的class可以和原有的class共存
+
+### 五.表单控件
+
+1.v-model
+
+### 六.条件渲染
+v-if='true'  是否渲染该元素（重建销毁）
+v-else
+v-show="true"  调节display:block属性，石元素显示隐藏
+
+### 六.组件
+
+
+1.要在跟实例初始化之前注册组件
+2.组件的注册
+  全局注册
+  Vue.component('comA',{
+    template:'<div>{{message}}</div>',
+    data:function(){
+      return message:'xxxxx'
+    }
+  })
+  //data在组件中应该为函数，否则会耦合
+
+  //创建根实例
+  new Vue({
+    el:'#app'
+  })
+
+  局部注册
+
+  const  child ={
+    template:'<div>this is child compontent</div>'
+  }
+
+  new Vue({
+    component:{
+      my-child:'child'
+    }
+  })
+
+***注意事项
+1.只有实例被创建了，data中的属性才是响应式的，所以一开始需要创建好一个，即使为空
+Object.freeze()可以防止修改
+2.vue中慎用箭头函数
+3.使用 v-once 指令，你也能执行一次性地插值
+4.<a v-bind:[attributeName]="url"> ... </a>动态的设置组件或者元素的特性
+
+#组建基础
+1.
+父组件
+let a = new Vue({
+        el: '#blog-post-demo',
+        data: {
+          posts: [
+            { id: 1, title: 'My journey with Vue' },
+            { id: 2, title: 'Blogging with Vue' },
+            { id: 3, title: 'Why Vue is so fun' }
+          ]
+        }
+      })
+
+      子组件
+        Vue.component('blog-demo',{
+            props:[post],
+            template:`
+                <div class="blog-demo">
+                    <p>{{post.title}}</p>
+                </div>
+            `
+
+        })
+ 2.$emit自定义监听事件（数据传递子组件-》父组件）
+
+ 父组件app
+<div id="app">
+    <blog-demo v-on:testEvent="xxx"></blog-demo>
+</div>
+
+子组件blog-demo
+<button v-on:click="$emit('testEvent',data)">
+  Enlarge text
+</button>
+
+
+v-model
+
+
+自定义事件也可以用于创建支持 v-model 的自定义输入组件。记住：
+
+<input v-model="searchText">
+等价于：
+
+<input
+  v-bind:value="searchText"
+  v-on:input="searchText = $event.target.value"
+>
+
+当用在组件上时，v-model 则会这样：
+
+<custom-input
+  v-bind:value="searchText"
+  v-on:input="searchText = $event"
+></custom-input>
+为了让它正常工作，这个组件内的 <input> 必须：
+
+将其 value 特性绑定到一个名叫 value 的 prop 上
+在其 input 事件被触发时，将新的值通过自定义的 input 事件抛出
+写成代码之后是这样的：
+
+Vue.component('custom-input', {
+  props: ['value'],
+  template: `
+    <input
+      v-bind:value="value"
+      v-on:input="$emit('input', $event.target.value)"
+    >
+  `
+})
+现在 v-model 就应该可以在这个组件上完美地工作起来了：
+
+<custom-input v-model="searchText"></custom-input>
+
+
+
+
+
+
+
+

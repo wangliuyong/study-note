@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="javascript: new Date().toLocaleTimeString();">点击</a>
+    <div draggable="true" id="drg">
+        此区域可拖拉
+    </div>
+    <script>
+        drg.addEventListener('dragstart', function (e) {
+                this.style.backgroundColor = 'red';
+                console.log(e)
+            }, false);
+    </script>
+</body>
+</html>

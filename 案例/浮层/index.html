@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        *{margin: 0;padding: 0;}
+        .wrapper{margin: 100px;position: relative;display: inline-block;}
+        .wrapper >.button{
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 5px 10px;
+            background: #ccc;
+            white-space: nowrap;
+        }
+        span.float{
+            padding:10px 15px;
+            border: 1px solid red;
+            margin-left: 4px;
+            border-radius: 6px;
+            position: absolute;
+            top:10px;
+            left: 20px;
+            top: -11px; 
+            left: 57px;
+            display: none;
+            
+        }
+        span.float::after{
+            content: '';
+            display: block;
+            border: 10px solid transparent;
+            border-right-color:#fff; 
+            position: absolute;
+            left: -19px;
+            top: 5px;
+        }
+        span.float::before{
+            content: '';
+            display: block;
+            border: 10px solid transparent;
+            border-right-color:red; 
+            position: absolute;
+            left: -20px;
+            top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <span class="button" id="button">点我</span>
+        <span class="float" id="float">hello</span>
+    </div>
+    <script>
+        wrapper.addEventListener('click',function(e){
+            e.stopPropagation();
+            float.style.display="inline-block";
+        });
+        document.addEventListener('click',function(){
+            float.style.display = "none";
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*1.使用变量*/
+/*2混入，类似于函数*/
+/*2.1也可默认变量的值*/
+/*3.placeholder混入一个类*/
+body h1 {
+  box-shadow: 0 0 3px red;
+}
+
+body h1 {
+  color: green;
+  background: #ccc;
+  border: 0.5px solid red;
+}
+body h1:hover {
+  color: #000;
+}
+body h1-p {
+  color: #cccccc;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <style>
+  .red{
+    background: red;
+  }
+  </style>
+  <title>vue-app</title>
+</head>
+<body>
+  <div id="app" v-bind:class="{red:backColor}">
+    <span v-bind:title="message"></span>
+    {{message}}
+    <div v-if="seen">显示了吗</div>
+    <ol>
+      <li v-for="item in list">
+        {{item.title}}
+      </li>
+    </ol>
+    <input type="text" v-model="buttonText" placeholder="input">
+    <button v-on:click="onClick">{{buttonText}}</button>
+
+    <ul>
+      <todo-item v-for="item in list" v-bind:todo="item" v-on:test="xxx"></todo-item>
+    </ul>
+
+    <div>{{textChange}}</div>
+    <ol >
+      <li v-for="item in 10">{{item}}</li>
+    </ol>
+
+    <button @click="changeColor">背景色切换</button>
+    <textarea name="" id="" cols="30" rows="10" v-model="message"></textarea>
+    <input type="checkbox" name="" id="" v-model="checkbox">
+    <span>{{checkbox}}</span>
+
+  </div>
+
+
+  <script src="./main.js"></script>
+
+</body>
+</html>
+
