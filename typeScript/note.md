@@ -129,4 +129,26 @@ favoriteNumber = 1;//正确
  
  4.在angular的组件中可以使用get,set来监听属性的变化来在属性更改时去调用相应的函数
  
+  5.接口的继承使用implements
+  ```
+    interface Alarm {
+    alert();
+    }
 
+    interface Light {
+        lightOn();
+        lightOff();
+    }
+
+    class Car implements Alarm, Light {
+        alert() {
+            console.log('Car alert');
+        }
+        lightOn() {
+            console.log('Car light on');
+        }
+        lightOff() {
+            console.log('Car light off');
+        }
+    }
+  ```
