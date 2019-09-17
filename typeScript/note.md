@@ -116,7 +116,7 @@ favoriteNumber = 1;//正确
 ```
 
 ## 应用总结
- 1.函数参数的类型有多种时，在ts类型推断错误的情况下，可以使用断言来解决 
+ 1.函数参数的类型使用联合类型时，在ts类型推断错误的情况下，可以使用断言来解决 
  ```
  <type>参数
  ```
@@ -125,5 +125,8 @@ favoriteNumber = 1;//正确
  
  内置对象大全：https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
  
- 3.
+ 3.如果一个变量声明未赋值，类型会被推断为any；赋值了就会被推断为值得类型；
+ 
+ 4.在angular的组件中可以使用get,set来监听属性的变化来在属性更改时去调用相应的函数
+ 
 
