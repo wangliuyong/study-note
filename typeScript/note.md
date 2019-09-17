@@ -1,3 +1,5 @@
+参考阮一峰ts教程:https://ts.xcatliu.com/basics
+
 # ts简介
 什么是ts：ts是js的超集
 特点：提供类型系统和es6的支持
@@ -112,3 +114,16 @@ favoriteNumber = 1;//正确
         declare global 扩展全局变量
         declare module 扩展模块
 ```
+
+## 应用总结
+ 1.函数参数的类型有多种时，在ts类型推断错误的情况下，可以使用断言来解决 
+ ```
+ <type>参数
+ ```
+ 2.会用到的内置对象
+ Document、HTMLElement、Event、NodeList、Boolean、Error、Date、RegExp
+ 
+ 内置对象大全：https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+ 
+ 3.
+
